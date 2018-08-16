@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>Workflow</groupId>
+    <artifactId>Workflow</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>Lambda_API</artifactId>
+  <name>workflow:Lambda_API</name>
+  
+  
+  
+  <dependencies>
+  
+  <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-api-gateway -->
+	<dependency>
+	    <groupId>com.amazonaws</groupId>
+	    <artifactId>aws-java-sdk-api-gateway</artifactId>
+	    <version>1.11.386</version>
+	</dependency>
+  <dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20180130</version>
+</dependency>
+  
+  <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+	<dependency>
+	    <groupId>com.googlecode.json-simple</groupId>
+	    <artifactId>json-simple</artifactId>
+	    <version>1.1</version>
+	</dependency>
+	  <dependency>
+	    <groupId>DataModel</groupId>
+	    <artifactId>DataModel</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	 <dependency>
+	    <groupId>Core</groupId>
+	    <artifactId>ExtractCore</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+  
+  </dependencies>
+</project>

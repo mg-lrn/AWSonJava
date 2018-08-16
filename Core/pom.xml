@@ -9,4 +9,7 @@
   <packaging>pom</packaging>
   <name>AWSonJava:Core</name>
   <groupId>Core</groupId>
+  <modules>
+  	<module>ExtractCore</module>
+  </modules>
 </project>

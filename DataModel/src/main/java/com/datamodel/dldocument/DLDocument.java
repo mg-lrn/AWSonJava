@@ -1,9 +1,9 @@
-package com.datamodel.document;
+package com.datamodel.dldocument;
 
 
 public interface DLDocument {
 
-	StringBuilder outputXML= new StringBuilder();
+	
 	public  String getXMLFromDocument(String json,String RootElement);
 	public String[] getDocumentS3Location(String DocumentKey);
 }

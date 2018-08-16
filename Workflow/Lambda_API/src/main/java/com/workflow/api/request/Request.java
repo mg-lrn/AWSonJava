@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.datamodel.document.*;
+import com.datamodel.dldocument.*;
 import com.workflow.api.model.*;
 
 public class Request {

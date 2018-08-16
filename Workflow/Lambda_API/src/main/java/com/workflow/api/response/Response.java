@@ -6,23 +6,44 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class Response {
 
-	public OutputStream outputStream;
+	
 	public Response() {
 		// TODO Auto-generated constructor stub
 		
 	}
 
-	public void setResponseStream(String responseStr) throws IOException
+	public String getResponseStream(String responseStr,int useAsJsonObj) throws IOException
 	{
-		
-        JSONObject responseJson = new JSONObject();
+		 JSONObject responseJson= null;
+		 
+		 responseJson=new JSONObject(); 
         
-        JSONObject responseBody = new JSONObject();
-        responseBody.put("response", responseStr);
-        responseBody.put("message", "Success");
+		 JSONObject responseBody = new JSONObject();
+		 if(useAsJsonObj==0)
+		 {
+        
+	        responseBody.put("response", responseStr);
+	        responseBody.put("message", "Success");
+		 }
+		 else
+		 {
+			 
+			 
+			 JSONParser parser = new JSONParser(); 
+			 try {
+				responseBody = (JSONObject) parser.parse(responseStr);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		 
+		 }
 
         JSONObject headerJson = new JSONObject();
         headerJson.put("x-custom-header", "my custom header value");
@@ -30,12 +51,10 @@ public class Response {
         responseJson.put("isBase64Encoded", false);
         responseJson.put("statusCode", "200");
         responseJson.put("headers", headerJson);
-        responseJson.put("body", responseBody.toString());  
-
+        responseJson.put("body", responseBody.toString()); 
         
-        OutputStreamWriter writer = new OutputStreamWriter(outputStream, "UTF-8");
-        writer.write(responseJson.toJSONString());  
-        writer.close();
+        return responseJson.toJSONString();
+
         
 	}
 }

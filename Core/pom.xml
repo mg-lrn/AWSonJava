@@ -11,5 +11,6 @@
   <groupId>Core</groupId>
   <modules>
   	<module>ExtractCore</module>
+  	<module>PublishCore</module>
   </modules>
 </project>

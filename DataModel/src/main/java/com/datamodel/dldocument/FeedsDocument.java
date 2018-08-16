@@ -1,4 +1,4 @@
-package com.datamodel.document;
+package com.datamodel.dldocument;
 
 import java.util.Iterator;
 
@@ -14,11 +14,11 @@ public class FeedsDocument implements DLDocument{
 	
 	public  String getXMLFromDocument(String json,String RootElement)
 	{
-		
+		StringBuilder outputXML= new StringBuilder();
 		outputXML.append("<"+RootElement+">");		
 		org.json.JSONObject jsonFileObject = new org.json.JSONObject(json);
-		setXMLForElement("feedUpdatesSnapshot",jsonFileObject,"FEEDUPDATESSNAPSHOT");	
-		setXMLforFeeds(jsonFileObject.getJSONObject("feedsData"));		
+		setXMLForElement("feedUpdatesSnapshot",jsonFileObject,"FEEDUPDATESSNAPSHOT",outputXML);	
+		setXMLforFeeds(jsonFileObject.getJSONObject("feedsData"),outputXML);		
 		outputXML.append("</"+RootElement+">");	
 	
 		return outputXML.toString();
@@ -53,7 +53,7 @@ public class FeedsDocument implements DLDocument{
 		
 		
 		Location[0] = DocumentKey.substring(4, 5);
-		Location[1] = DocumentKey.substring(5, 8);
+		Location[1] = DocumentKey.substring(5, 9);
 		
 		Integer temp = Integer.parseInt(Location[0])/2 + 1;
 		
@@ -67,7 +67,7 @@ public class FeedsDocument implements DLDocument{
 	
 	
 	
-	private  void setXMLforFeeds(JSONObject jsonObject)
+	private  void setXMLforFeeds(JSONObject jsonObject,StringBuilder outputXML)
 	{
 		
 		 Iterator<?> keys = jsonObject.keys();
@@ -82,7 +82,7 @@ public class FeedsDocument implements DLDocument{
 		    	 outputXML.append("<"+key+">");
 						for(int i = 0; i < feedDataContent.length(); i++)
 						{
-						      setXMLForElement("content",(JSONObject) feedDataContent.get(i),"ENTRY");	
+						      setXMLForElement("content",(JSONObject) feedDataContent.get(i),"ENTRY",outputXML);	
 						      
 						}
 				outputXML.append("</"+key+">");
@@ -93,7 +93,7 @@ public class FeedsDocument implements DLDocument{
 		
 	}
 	
-	private  void setXMLForElement(String JSONElement,JSONObject jsonObject,String XMLoutputNode)
+	private  void setXMLForElement(String JSONElement,JSONObject jsonObject,String XMLoutputNode,StringBuilder outputXML)
 	{
 		
 		outputXML.append("<"+XMLoutputNode+">");

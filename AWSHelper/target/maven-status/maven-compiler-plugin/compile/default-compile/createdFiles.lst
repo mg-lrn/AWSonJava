@@ -1,1 +1,6 @@
+com/awshelper/SQSHelper.class
+com/awshelper/DynamoDBHelper.class
+com/awshelper/KinesisDataStreamHelper.class
+com/awshelper/RDSHelper.class
+com/awshelper/SNSHelper.class
 com/awshelper/S3Helper.class

@@ -1,1 +1,6 @@
+/Users/mgaikwad/eclipse-workspace/AWSonJava/AWSHelper/src/main/java/com/awshelper/DynamoDBHelper.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/AWSHelper/src/main/java/com/awshelper/SNSHelper.java
 /Users/mgaikwad/eclipse-workspace/AWSonJava/AWSHelper/src/main/java/com/awshelper/S3Helper.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/AWSHelper/src/main/java/com/awshelper/KinesisDataStreamHelper.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/AWSHelper/src/main/java/com/awshelper/RDSHelper.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/AWSHelper/src/main/java/com/awshelper/SQSHelper.java

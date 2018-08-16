@@ -39,4 +39,10 @@
     </dependency>
   </dependencies>
   
+  <modules>
+  	
+  	<module>Lambda_API</module>
+  	<module>Lambda_Extract</module>
+  	<module>Lambda_Publish</module>
+  </modules>
 </project>

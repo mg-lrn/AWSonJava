@@ -1,0 +1,5 @@
+com/workflow/api/model/Resource.class
+com/workflow/api/model/XSLT.class
+com/workflow/api/response/Response.class
+com/workflow/api/APILambdaFunctionHandler.class
+com/workflow/api/request/Request.class

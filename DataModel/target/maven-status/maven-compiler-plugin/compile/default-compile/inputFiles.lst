@@ -1,0 +1,8 @@
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/aws/sns/SNSTopic.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/aws/sqs/SQSMessage.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/dldocument/DLDocument.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/dldocument/FeedsDocument.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/aws/sns/SNSDocuments.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/aws/sns/SNSError.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/subscription/SubscriptionConfig.java
+/Users/mgaikwad/eclipse-workspace/AWSonJava/DataModel/src/main/java/com/datamodel/aws/sns/SNSWarning.java

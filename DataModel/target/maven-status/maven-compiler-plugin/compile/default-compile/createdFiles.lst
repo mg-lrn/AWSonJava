@@ -1,0 +1,8 @@
+com/datamodel/aws/sqs/SQSMessage.class
+com/datamodel/dldocument/DLDocument.class
+com/datamodel/subscription/SubscriptionConfig.class
+com/datamodel/aws/sns/SNSTopic.class
+com/datamodel/aws/sns/SNSWarning.class
+com/datamodel/aws/sns/SNSDocuments.class
+com/datamodel/aws/sns/SNSError.class
+com/datamodel/dldocument/FeedsDocument.class
